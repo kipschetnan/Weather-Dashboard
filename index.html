@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header id="header">
+        Weather Dashboard
+    </header>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="search-label">
+                Search for a City:
+            </div>
+
+            <div id="geocoder"></div>
+
+            <div>
+                <button class="btn btn-primary" id="searchEl">Search</button>
+            </div>
+
+            <div>
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+
+        <div  class="col-8">
+            <div class="customLocation">
+                <div id="location" ></div>
+                <div id="temp"></div>
+                <div id="wind"></div>
+                <div id="humidity"></div>
+            </div>
+
+            <div class="row" id="weather">
+                <div class="col-2">
+                    <i id="icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div id="geocoder">
+        <input id="input" type="text" class="form-control search-input">
+   </div>
+    <div id="weather">
+        <button class="btn btn-primary" id="searchEl">Search</button>
+    </div> -->
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
