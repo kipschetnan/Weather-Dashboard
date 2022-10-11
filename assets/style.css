@@ -26,11 +26,12 @@
 }
 
 #searchEl {
+    margin-top: 5px;
     margin-left: 15px;
 }
 
 .customLocation {
-    /* display: inline-block; */
+    margin-top: 15px;
     min-height: 175px;
     border: 1px solid black;
     margin-right: 200px;
@@ -40,6 +41,7 @@
 #location {
     margin-left: 15px;
     font-size: 40px;
+    font-weight: bold;
 }
 
 #temp {
@@ -59,4 +61,79 @@
 
 #geocoder {
     margin-left: 15px;
+}
+
+#history {
+    margin-top: 20px;
+    border-top: 2px solid gray;
+    margin-left: 15px;
+}
+
+.days {
+    margin-top: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    column-gap: 17px;
+    margin-right: 200px;
+    
+}
+
+#day1 {
+    height: 200px;
+    background-color: gray;
+}
+
+#day1 div {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#day2 {
+    height: 200px;
+    background-color: gray;
+}
+
+#day2 div {
+    margin-top: 15px;
+    margin-left: 5px;
+
+}
+
+#day3 {
+    height: 200px;
+    background-color: gray;
+}
+
+#day3 div {
+    margin-top: 15px;
+    margin-left: 5px;
+
+}
+
+#day4 {
+    height: 200px;
+    background-color: gray;
+}
+
+#day4 div {
+    margin-top: 15px;
+    margin-left: 5px;
+
+}
+
+#day5 {
+    height: 200px;
+    background-color: gray;
+}
+
+#day5 div {
+    margin-top: 15px;
+    margin-left: 5px;
+
+}
+
+#weather {
+    font-size: 40px;
+    font-weight: bold;
 }
