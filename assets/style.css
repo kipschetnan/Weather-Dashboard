@@ -70,6 +70,7 @@
 }
 
 .days {
+    color: white;
     margin-top: 15px;
     width: 100%;
     display: grid;
@@ -135,5 +136,25 @@
 
 #weather {
     font-size: 40px;
+    font-weight: bold;
+}
+
+#date1 {
+    font-weight: bold;
+}
+
+#date2 {
+    font-weight: bold;
+}
+
+#date3 {
+    font-weight: bold;
+}
+
+#date4 {
+    font-weight: bold;
+}
+
+#date5 {
     font-weight: bold;
 }
