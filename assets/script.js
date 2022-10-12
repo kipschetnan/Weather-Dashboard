@@ -45,8 +45,7 @@ d5Date = today.add(1, 'days').format("MM/DD/YY");
 let dataObject;
 let long = '';
 let lat = '';
-let history = [];
-
+let historyStorage;
 
 function weatherDash(data) {
   let cityName = data.city.name;
@@ -142,7 +141,7 @@ function getApi() {
     
     })
     
-    localStorage.setItem('list', JSON.stringify(history));
+    localStorage.setItem('list', JSON.stringify(historyStorage));
     var storedHistory = JSON.parse(localStorage.getItem('list'));
     var li = document.createElement("li");
 
@@ -161,10 +160,12 @@ const geocoder = new MapboxGeocoder({
 });
 
 geocoder.on('result', function(data) {
+  let history = [];
   long = data.result.geometry.coordinates[0];
   lat = data.result.geometry.coordinates[1];
   history.push(data.result.place_name);
-  console.log(history)
+  historyStorage = history;
+  console.log(historyStorage)
 })
  
 
